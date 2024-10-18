@@ -1,0 +1,105 @@
+********table at bottom
+
+Observations for Each Pulse Sequence
+Here’s a guide to help you report the observations for each sequence:
+
+1. Spin Echo (SE):
+Effect of TR:
+
+As TR increases, signal intensity for all tissues (GM, WM, CSF) typically increases. This is because longer TR allows more complete recovery of longitudinal magnetization, leading to stronger signals.
+Shorter TR values result in reduced signal intensity, especially for tissues with longer T1 times (like GM and CSF).
+Effect of TE:
+
+Increasing TE results in lower signal intensities due to the decay of transverse magnetization. This effect is more pronounced in tissues with shorter T2 times (like WM).
+With long TE values, the signal from tissues with short T2 times (like WM) decays faster than the signal from tissues with longer T2 times (like CSF).
+2. T1 Inversion Recovery (IR):
+Effect of TI:
+
+With a short TI, the signal from tissues with short T1 times (like WM) is stronger because they recover faster from the inversion pulse.
+As TI increases, tissues with longer T1 times (like GM and CSF) become more prominent because they take longer to recover from inversion.
+Effect of TR:
+
+Increasing TR allows more complete recovery of longitudinal magnetization, so the signal intensity tends to increase for all tissues.
+At short TR values, the differences between tissues are more pronounced because tissues with short T1 times (WM) recover faster, leading to stronger signals.
+3. Gradient Recalled Echo (GRE):
+Effect of Flip Angle (α):
+
+Small flip angles (e.g., α = 15°) produce weaker signals because the magnetization is tipped only slightly into the transverse plane.
+Larger flip angles (e.g., α = 90°) produce stronger signals because more magnetization is tipped into the transverse plane. However, very large flip angles can lead to signal saturation, especially with short TR.
+Effect of TR:
+
+As TR increases, the signal intensity increases due to more complete recovery of longitudinal magnetization.
+Short TR values reduce the signal, particularly for larger flip angles, due to incomplete recovery between excitations.
+
+
+
+Spin Echo (SE) Observations:
+
+TR Impact: As TR increases, the signal intensity for all tissues (GM, WM, CSF) increases. Longer TR allows more longitudinal magnetization recovery, particularly benefiting tissues with long T1 times, such as CSF.
+TE Impact: Increasing TE reduces the signal intensity for all tissues. This effect is more pronounced in tissues with shorter T2 times, such as WM, which lose signal more rapidly than tissues like CSF.
+T1 Inversion Recovery (IR) Observations:
+
+TR and TI Impact: At short TI, tissues with shorter T1 times (like WM) dominate the signal. As TI increases, tissues with longer T1 times, such as GM and CSF, become more prominent. Larger TR values enhance the signal intensity for all tissues, but short TR makes differences between tissues more pronounced.
+Gradient Recalled Echo (GRE) Observations:
+
+Flip Angle Impact: Smaller flip angles (e.g., α = 15°) produce weaker signals across all tissues, while larger flip angles (e.g., α = 90°) enhance the signal. However, larger flip angles can lead to signal saturation when combined with shorter TR values.
+TR Impact: Longer TR values increase the signal for all tissues, as there is more recovery time between excitations. Short TR values reduce the signal, especially for large flip angles due to incomplete recovery.
+
+
+
+
+
+
+
+
+
+
+>> generate_si_maps
+--- Spin Echo (SE) ---
+TR=250, TE=20 -> GM=82.4459, WM=74.9018, CSF=101.5425
+TR=250, TE=40 -> GM=64.9560, WM=56.1472, CSF=93.6531
+TR=250, TE=60 -> GM=51.2413, WM=42.1367, CSF=86.3853
+TR=250, TE=80 -> GM=40.4718, WM=31.6575, CSF=79.6892
+TR=500, TE=20 -> GM=82.4459, WM=74.9018, CSF=101.5425
+TR=500, TE=40 -> GM=64.9560, WM=56.1472, CSF=93.6531
+TR=500, TE=60 -> GM=51.2413, WM=42.1367, CSF=86.3853
+TR=500, TE=80 -> GM=40.4718, WM=31.6575, CSF=79.6892
+TR=750, TE=20 -> GM=82.4459, WM=74.9018, CSF=101.5425
+TR=750, TE=40 -> GM=64.9560, WM=56.1472, CSF=93.6531
+TR=750, TE=60 -> GM=51.2413, WM=42.1367, CSF=86.3853
+TR=750, TE=80 -> GM=40.4718, WM=31.6575, CSF=79.6892
+TR=1000, TE=20 -> GM=82.4459, WM=74.9018, CSF=101.5425
+TR=1000, TE=40 -> GM=64.9560, WM=56.1472, CSF=93.6531
+TR=1000, TE=60 -> GM=51.2413, WM=42.1367, CSF=86.3853
+TR=1000, TE=80 -> GM=40.4718, WM=31.6575, CSF=79.6892
+TR=2000, TE=20 -> GM=82.4459, WM=74.9018, CSF=101.5425
+TR=2000, TE=40 -> GM=64.9560, WM=56.1472, CSF=93.6531
+TR=2000, TE=60 -> GM=51.2413, WM=42.1367, CSF=86.3853
+TR=2000, TE=80 -> GM=40.4718, WM=31.6575, CSF=79.6892
+--- T1 Inversion Recovery (IR) ---
+TR=1000, TI=50 -> GM=104.7822, WM=100.0377, CSF=110.1047
+TR=1000, TI=100 -> GM=104.7822, WM=100.0377, CSF=110.1075
+TR=1000, TI=250 -> GM=104.7822, WM=100.0377, CSF=110.1075
+TR=1000, TI=500 -> GM=104.7822, WM=100.0377, CSF=110.1075
+TR=1000, TI=750 -> GM=104.7822, WM=100.0377, CSF=110.1075
+TR=2000, TI=50 -> GM=104.7822, WM=100.0377, CSF=110.1047
+TR=2000, TI=100 -> GM=104.7822, WM=100.0377, CSF=110.1075
+TR=2000, TI=250 -> GM=104.7822, WM=100.0377, CSF=110.1075
+TR=2000, TI=500 -> GM=104.7822, WM=100.0377, CSF=110.1075
+TR=2000, TI=750 -> GM=104.7822, WM=100.0377, CSF=110.1075
+--- Gradient Recalled Echo (GRE) ---
+TR=25, α=15.0 -> GM=25.5388, WM=24.0821, CSF=27.9237
+TR=25, α=30.0 -> GM=49.3371, WM=46.5230, CSF=53.9286
+TR=25, α=45.0 -> GM=69.7732, WM=65.7935, CSF=76.2309
+TR=25, α=60.0 -> GM=85.4543, WM=80.5802, CSF=93.3066
+TR=25, α=90.0 -> GM=98.6741, WM=93.0460, CSF=107.5833
+TR=50, α=15.0 -> GM=25.5388, WM=24.0821, CSF=27.9265
+TR=50, α=30.0 -> GM=49.3371, WM=46.5230, CSF=53.9498
+TR=50, α=45.0 -> GM=69.7732, WM=65.7935, CSF=76.2964
+TR=50, α=60.0 -> GM=85.4544, WM=80.5802, CSF=93.4433
+TR=50, α=90.0 -> GM=98.6742, WM=93.0460, CSF=107.8984
+TR=100, α=15.0 -> GM=25.5388, WM=24.0821, CSF=27.9265
+TR=100, α=30.0 -> GM=49.3371, WM=46.5230, CSF=53.9499
+TR=100, α=45.0 -> GM=69.7732, WM=65.7935, CSF=76.2966
+TR=100, α=60.0 -> GM=85.4544, WM=80.5802, CSF=93.4439
+TR=100, α=90.0 -> GM=98.6742, WM=93.0460, CSF=107.8997
